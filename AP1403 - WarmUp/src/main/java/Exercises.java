@@ -1,10 +1,14 @@
 public class Exercises {
-
-    /*
-        complete this function to check if the input number is prime or not
-     */
+    
     public boolean isPrime(long n) {
-        // todo
+        if (n < 2 || n % 2 == 0){
+            return false;}
+        elseif (n == 2) {
+            return true;}
+        for (long i = 3; i * i <= n; i+= 2) {
+            if (n % i == 0) 
+                return false;}
+        
         return false;
     }
 
